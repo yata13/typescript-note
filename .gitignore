@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ﻿node_modules/
 .env
 dist/
 build/
+=======
+node_modules/
+dist/
+.env
+>>>>>>> c00be1b5c98c598e5c0fabfc350ecc8a9db546e3

@@ -1,15 +1,16 @@
-import React, { use, useEffect, useState } from 'react';
+import { use, useEffect, useState } from 'react';
 import {api} from '../api'
 
-const Users = () => {
-
-    type User = {
+ type User = {
         id: number;
         name: string;
         email: string;
     };
 
-    const [users, setUser] = useState<User[]>([]);
+const Users = () => {
+
+   
+    const [users, setUsers] = useState<User[]>([]);
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(true); 
 
@@ -18,7 +19,7 @@ const Users = () => {
         
         try{
             const data = await api('/users');
-            setUser(data)
+            setUsers(data)
         }catch(err){
             setError((err as Error).message);
         }finally{

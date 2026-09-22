@@ -16,3 +16,4 @@ export const api = async (path: string, method = "GET", body?: unknown) => { // 
   if (!res.ok) throw new Error(data.message); // ✅ message
   return data;
 };
+
